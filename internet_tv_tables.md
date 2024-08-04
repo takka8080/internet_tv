@@ -54,8 +54,8 @@
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |slot_id|BIGINT(20)||PRIMARY||Yes|
 |channel_id|INT(10)||INDEX|||
-|start_time|TIME|||||
-|end_time|TIME|||||
+|start_time|DATETIME|||||
+|end_time|DATETIME|||||
 * 外部キー制約：cahnnel_idに対してchannelsカラムのchannel_idから設定
 ## テーブル：broadcasts
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
@@ -63,7 +63,6 @@
 |broadcast_id|BIGINT(20)||PRIMARY||Yes|
 |slot_id|BIGINT(20)||INDEX|||
 |episode_id|BIGINT(20)||INDEX|||
-|broadcast_time|DATETIME|||||
 |view_count|INT(10)|||||
 * 外部キー制約：slot_idに対してtime_slotカラムのslot_id、episode_idに対してepisodesカラムのepisode_idから設定
 ## テーブル：comments
