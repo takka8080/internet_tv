@@ -24,13 +24,6 @@
 |program_id|BIGINT(20)||PRIMARY||Yes|
 |program_name|VARCHAR(50)|||||
 |description|TEXT|||||
-## テーブル：seasons
-|カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|season_id|INT(10)||PRIMARY||Yes|
-|season_number|INT(10)|||||
-|program_id|BIGINT(20)||INDEX|||
-* 外部キー制約：program_idに対してprogramsカラムのprogram_idから設定
 ## テーブル：program_genres
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -43,7 +36,7 @@
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |episode_id|BIGINT(20)||PRIMARY||Yes|
 |program_id|BIGINT(20)||INDEX|||
-|season_id|INT(10)|Yes|INDEX|||
+|season_number|INT(10)|Yes||||
 |episode_number|INT(10)|Yes||||
 |title|VARCHAR(300)|||||
 |description|TEXT|||||
