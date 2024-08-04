@@ -49,7 +49,7 @@
 |description|TEXT|||||
 |video_time|INT(10)|||||
 |release_date|DATE|||||
-* 外部キー制約：season_idに対してseasonsカラムのseason_idから設定
+* 外部キー制約：program_idに対してprogramsカラムのprogram_id、season_idに対してseasonsカラムのseason_idから設定
 ## テーブル：time_slot
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
 |:--:|:--:|:--:|:--:|:--:|:--:|
