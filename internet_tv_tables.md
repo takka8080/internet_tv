@@ -42,6 +42,7 @@
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |episode_id|BIGINT(20)||PRIMARY||Yes|
+|program_id|BIGINT(20)||INDEX|||
 |season_id|INT(10)|Yes|INDEX|||
 |episode_number|INT(10)|Yes||||
 |title|VARCHAR(300)|||||
