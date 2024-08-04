@@ -66,13 +66,13 @@
 |broadcast_time|DATETIME|||||
 |view_count|INT(10)|||||
 * 外部キー制約：slot_idに対してtime_slotカラムのslot_id、episode_idに対してepisodesカラムのepisode_idから設定
-## テーブル：comment
+## テーブル：comments
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |comment_id|BIGINT(20)||PRIMARY||Yes|
 |user_id|BIGINT(20)||INDEX|||
 |episode_id|BIGINT(20)||INDEX|||
-|comment_text|TEXT|||||
+|comment|TEXT|||||
 |view_date|DATETIME|||||
 * 外部キー制約：user_idに対してusersカラムのuser_id、episode_idに対してepisodesカラムのepisode_idから設定
 ## テーブル：view_history
