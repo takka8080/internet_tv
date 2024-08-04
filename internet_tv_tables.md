@@ -65,7 +65,7 @@
 |user_id|BIGINT(20)||INDEX|||
 |episode_id|BIGINT(20)||INDEX|||
 |comment|TEXT|||||
-|view_date|DATETIME|||||
+|write_date|DATETIME|||||
 * 外部キー制約：user_idに対してusersカラムのuser_id、episode_idに対してepisodesカラムのepisode_idから設定
 ## テーブル：view_history
 |カラム名|データ型|NULL|キー|初期値|AUTO<br>INCREMENT|
